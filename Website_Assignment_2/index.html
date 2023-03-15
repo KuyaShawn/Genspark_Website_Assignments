@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- Template by html.am -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Sign Up form</title>
+    <link rel="stylesheet" href="styles\style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="scripts\script.js"></script>
+  </head>
+
+  <body>
+    <div class="form-body">
+      <div class="row">
+        <div class="form-holder">
+          <div class="form-content">
+            <div class="form-items">
+              <h3 class="mb-3">Register</h3>
+              <form autocomplete="off">
+                <!-- Username Input -->
+                <div class="mb-3">
+                  <label class="form-label"
+                    >Username <span class="required-color">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="InputUsername"
+                    name="InputUsername"
+                    required
+                  />
+                  <span
+                    id="username_error"
+                    class="hide required-color error-message"
+                    >Invalid Input</span
+                  >
+                  <span
+                    id="empty_username"
+                    class="hide required-color error-message"
+                    >First Name Cannot Be Empty</span
+                  >
+                </div>
+                <!-- Password Input -->
+                <div class="mb-3">
+                  <label class="form-label"
+                    >Password <span class="required-color">*</span></label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="InputPassword"
+                    name="InputPassword"
+                    required
+                  />
+                  <span
+                    id="password_error"
+                    class="hide required-color error-message"
+                  >
+                    Passwords Should Have Letter, Symbols, Numbers And be more
+                    than 7 letters
+                  </span>
+                  <span
+                    id="empty_password"
+                    class="hide required-color error-message"
+                  >
+                    Password Cannot Be Empty
+                  </span>
+                </div>
+                <!-- Email Input -->
+                <div class="mb-3">
+                  <label class="form-label"
+                    >Email address <span class="required-color">*</span></label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="InputEmail"
+                    name="InputEmail"
+                    required
+                  />
+                  <span
+                    id="email_error"
+                    class="hide required-color error-message"
+                    >Invalid Email</span
+                  >
+                  <span
+                    id="empty_email"
+                    class="hide required-color error-message"
+                    >Email Cannot Be Empty</span
+                  >
+                </div>
+                <button
+                  type="submit-button"
+                  class="btn btn-primary mt-3"
+                  id="submit-button"
+                >
+                  Signup
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
